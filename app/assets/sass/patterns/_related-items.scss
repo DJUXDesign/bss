@@ -1,0 +1,149 @@
+// This is a GOV.UK Publishing specific component that
+// can be seen at http://govuk-static.herokuapp.com/component-guide/related_items
+
+
+
+// This is a CSS for Start page
+
+.app-related-items {
+  border-top: 10px solid govuk-colour("blue");
+  padding-top: govuk-spacing(2);
+}
+
+.app-related-items .govuk-list > li {
+  margin-bottom: govuk-spacing(2);
+}
+.govuk-grid-row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.govuk-grid-column-one-third {
+    width: 33.3333%;
+    float: left;
+}
+.govuk-card--contained {
+  background-color: #f8f8f8;
+}
+.govuk-card {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 7px solid #005ea5;
+  box-sizing: border-box;
+}
+.govuk-card--contained .govuk-card__content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.govuk-card__content {
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+.govuk-heading-s {
+  font-size: 19px;
+  font-size: 1.1875rem;
+  line-height: 1.31579;
+}
+.govuk-card__content p {
+  margin-bottom: 0;
+}
+
+.govuk-body-m, .govuk-body, p {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+}
+.card-button .govuk-button {
+  background-color: #005ea5;
+}
+.govuk-card .govuk-button--start {
+  font-size: 18px;
+}
+.govuk-button:link, .govuk-button:visited, .govuk-button:active, .govuk-button:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+.govuk-link:visited, a:visited {
+  color: #4c2c92;
+}
+.govuk-\!-margin-top-2 {
+  margin-top: 10px !important;
+}
+.govuk-\!-margin-bottom-0 {
+  margin-bottom: 0 !important;
+}
+.govuk-button--start {
+  padding-top: 9px;
+  padding-bottom: 6px;
+}
+.govuk-button--start {
+  font-weight: 700;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1;
+  min-height: auto;
+  padding-top: 8px;
+  padding-right: 40px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  background-image: url(/assets/images/icon-pointer.png);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+.govuk-button {
+  width: auto;
+}
+.govuk-button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -4px;
+  left: -2px;
+  background: transparent;
+}
+
+.govuk-footer {
+  padding-top: 40px;
+}
+.govuk-width-container {
+  margin: 0 auto;
+}
+.govuk-footer__meta {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+// End of start page CSS
+
+
+
+
+// Default CSS
+
+.app-related-items {
+  border-top: 10px solid govuk-colour("blue");
+  padding-top: govuk-spacing(2);
+}
+
+.app-related-items .govuk-list > li {
+  margin-bottom: govuk-spacing(2);
+}
+
+// End of default CSS

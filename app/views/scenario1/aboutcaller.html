@@ -1,0 +1,120 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        About the caller
+      </h1>
+
+
+
+
+      <table class="govuk-table">
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header"><a href="/scenario1/startpage.html" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+                  Scenario 1
+                  <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+                    <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+                  </svg>
+                </a>
+                <details class="govuk-details" data-module="govuk-details">
+                    <summary class="govuk-details__summary">
+                      <span class="govuk-details__summary-text">
+                        Description
+                      </span>
+                    </summary>                      
+                        <div class="govuk-inset-text">
+                            <h2 class="govuk-heading-s">  
+                          <span class="govuk-caption-s">Wife reporting death of husband</span>
+                        </h2>
+                            <ul class="govuk-list govuk-list--bullet">
+                                <li>Passes security</li>
+                                <li>Estimated date of death (shows non-verified on CYA)</li>
+                                <li>No DAP (think it will be the solicitor – not confirmed yet)</li>
+                                <li>Goes into BSP, 2 screens in (BAIL)</li>
+                                <li>Skips FEP (too upset)</li>
+                                <li>(there would be declaration – no DAP or BSP or FEP – what would this screen do?)</li>
+                              </ul>
+                          </div>
+                  </details>
+              </th>
+            </tr>
+            
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header"><a href="#" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+                    Scenario 2
+                    <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+                      <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+                    </svg>
+                  </a>
+                  <details class="govuk-details" data-module="govuk-details">
+                      <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">
+                          Description
+                        </span>
+                      </summary>                      
+                      <div class="govuk-inset-text">
+                          <h2 class="govuk-heading-s">  
+                        <span class="govuk-caption-s">Cousin reporting death of cousin</span>
+                      </h2>
+                          <ul class="govuk-list govuk-list--bullet">
+                              <li>Only knows name and first line of address – nothing else (fails security, shows non-verified on CYA)</li>
+                              <li>Knows date of death</li>
+                              <li>Getting ESA</li>
+                              <li>Not eligible for the others</li>
+                              <li>(there would be declaration – no DAP or BSP or FEP – what would this screen do?)</li>
+                            </ul>
+                        </div>
+                    </details>
+                </th>
+              </tr>
+
+              <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header"><a href="#" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+                      Scenario 3
+                      <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+                        <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+                      </svg>
+                    </a>
+                    <details class="govuk-details" data-module="govuk-details">
+                        <summary class="govuk-details__summary">
+                          <span class="govuk-details__summary-text">
+                            Description
+                          </span>
+                        </summary>
+                        <div class="govuk-inset-text">
+                            <h2 class="govuk-heading-s">  
+                          <span class="govuk-caption-s">Girlfriend reporting boyfriend’s death</span>
+                        </h2>
+                            <ul class="govuk-list govuk-list--bullet">
+                                <li>Passes security</li>
+                                <li>Estimated date of death – it happened late at night so not sure</li>
+                                <li>Getting JSA</li>
+                                <li> DAP – yep, that will be me, give bank details</li>
+                                <li>BSP – not eligible</li>
+                                <li>FEP – yep, I’ll be arranging  (BAIL)</li>
+                                <li> Bail out of FEP on 2nd question</li>
+                                <li>Declaration- would be there for DAP</li>
+                              </ul>
+                          </div>
+                      </details>
+                  </th>
+                </tr>
+
+          </tbody>
+        </table>
+
+
+
+    </div>
+</div>
+
+{% endblock %}
