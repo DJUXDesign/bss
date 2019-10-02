@@ -1,8 +1,43 @@
 // This is a GOV.UK Publishing specific component that
 // can be seen at http://govuk-static.herokuapp.com/component-guide/related_items
 
+.app-c-tag {
+  background-color: #005ea5;
+  color: #fff;
+  display: inline-block;
+  font-family: 'nta', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  padding: 5px 8px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
+.app-c-tag--success {
+  background-color: #005ea5;
+}
 
+.app-c-tag--warning {
+  background-color: #b58840;
+}
+
+.app-c-tag--danger {
+  background-color: #df3034;
+}
+
+.app-c-tag--dead {
+  background-color: #0b0c0c;
+}
+
+.app-c-tag--nonverified {
+  background-color: #f47738;
+}
+
+.app-c-tag--eligible {
+  background-color: #00703c	;
+}
 // This is a CSS for Start page
 
 .app-related-items {

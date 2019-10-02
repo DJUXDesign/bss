@@ -9,108 +9,158 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
+        <a href="startpage.html" class="govuk-back-link">Back</a>
+
       <h1 class="govuk-heading-xl">
         About the caller
       </h1>
 
 
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="three-quarters">
+          Full name
+        </label>
+        <input class="govuk-input govuk-!-width-three-quarters" id="three-quarters" name="three-quarters" type="text">
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="three-quarters">
+          Phone number
+        </label>
+        <input class="govuk-input govuk-!-width-three-quarters" id="three-quarters" name="three-quarters" type="text">
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="three-quarters">
+          Relationship to person who died
+        </label>
+        <input class="govuk-input govuk-!-width-three-quarters" id="three-quarters" name="three-quarters" type="text">
+      </div>
+
+      <h1 class="govuk-heading-xl">
+        About the person who died
+      </h1>
 
 
-      <table class="govuk-table">
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header"><a href="/scenario1/startpage.html" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
-                  Scenario 1
-                  <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
-                    <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
-                  </svg>
-                </a>
-                <details class="govuk-details" data-module="govuk-details">
-                    <summary class="govuk-details__summary">
-                      <span class="govuk-details__summary-text">
-                        Description
-                      </span>
-                    </summary>                      
-                        <div class="govuk-inset-text">
-                            <h2 class="govuk-heading-s">  
-                          <span class="govuk-caption-s">Wife reporting death of husband</span>
-                        </h2>
-                            <ul class="govuk-list govuk-list--bullet">
-                                <li>Passes security</li>
-                                <li>Estimated date of death (shows non-verified on CYA)</li>
-                                <li>No DAP (think it will be the solicitor – not confirmed yet)</li>
-                                <li>Goes into BSP, 2 screens in (BAIL)</li>
-                                <li>Skips FEP (too upset)</li>
-                                <li>(there would be declaration – no DAP or BSP or FEP – what would this screen do?)</li>
-                              </ul>
-                          </div>
-                  </details>
-              </th>
-            </tr>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="three-quarters">
+          Full name
+        </label>
+        <input class="govuk-input govuk-!-width-three-quarters" id="three-quarters" name="three-quarters" type="text">
+      </div>
+
+      <br>
+
+            <h3 class="govuk-heading-m">
+            Date of birth
+            </h3>
+          <span id="passport-issued-hint" class="govuk-hint">
+            For example, 27 3 2007
+          </span>
+          <div class="govuk-date-input" id="passport-issued">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                  Day
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="number" pattern="[0-9]*">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                  Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="number" pattern="[0-9]*">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                  Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="number" pattern="[0-9]*">
+              </div>
+            </div>
+          </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="three-quarters">
+          National Insurance number
+        </label>
+        <input class="govuk-input govuk-!-width-three-quarters" id="three-quarters" name="three-quarters" type="text">
+      </div>
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+          <h3 class="govuk-heading-m">
+            Did the caller provide all of these details?
+          </h3>
+          <span id="how-contacted-conditional-hint" class="govuk-hint">
+            Select one option.
+          </span>
+          <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional">
+              <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
+                Yes
+              </label>
+            </div>
             
-            <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header"><a href="#" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
-                    Scenario 2
-                    <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
-                      <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
-                    </svg>
-                  </a>
-                  <details class="govuk-details" data-module="govuk-details">
-                      <summary class="govuk-details__summary">
-                        <span class="govuk-details__summary-text">
-                          Description
-                        </span>
-                      </summary>                      
-                      <div class="govuk-inset-text">
-                          <h2 class="govuk-heading-s">  
-                        <span class="govuk-caption-s">Cousin reporting death of cousin</span>
-                      </h2>
-                          <ul class="govuk-list govuk-list--bullet">
-                              <li>Only knows name and first line of address – nothing else (fails security, shows non-verified on CYA)</li>
-                              <li>Knows date of death</li>
-                              <li>Getting ESA</li>
-                              <li>Not eligible for the others</li>
-                              <li>(there would be declaration – no DAP or BSP or FEP – what would this screen do?)</li>
-                            </ul>
-                        </div>
-                    </details>
-                </th>
-              </tr>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
+              <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                No
+              </label>
+            </div>
+            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
+              
+              
 
-              <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header"><a href="#" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
-                      Scenario 3
-                      <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
-                        <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
-                      </svg>
-                    </a>
-                    <details class="govuk-details" data-module="govuk-details">
-                        <summary class="govuk-details__summary">
-                          <span class="govuk-details__summary-text">
-                            Description
-                          </span>
-                        </summary>
-                        <div class="govuk-inset-text">
-                            <h2 class="govuk-heading-s">  
-                          <span class="govuk-caption-s">Girlfriend reporting boyfriend’s death</span>
-                        </h2>
-                            <ul class="govuk-list govuk-list--bullet">
-                                <li>Passes security</li>
-                                <li>Estimated date of death – it happened late at night so not sure</li>
-                                <li>Getting JSA</li>
-                                <li> DAP – yep, that will be me, give bank details</li>
-                                <li>BSP – not eligible</li>
-                                <li>FEP – yep, I’ll be arranging  (BAIL)</li>
-                                <li> Bail out of FEP on 2nd question</li>
-                                <li>Declaration- would be there for DAP</li>
-                              </ul>
-                          </div>
-                      </details>
-                  </th>
-                </tr>
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <h3 class="govuk-heading-s">
+                    Were they able to answer the additional security questions?                  </h3>
+                  <div class="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                      <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                      <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                        No (the death will be non-verified)
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
 
-          </tbody>
-        </table>
+
+      
+            </div>
+      
+            </div>
+          </div>
+        </fieldset>
+        
+        <div class="govuk-form-group">
+          <a href="aboutdeceased.html" role="button" draggable="false" class="govuk-button govuk-button">
+              Continue
+          </a>
+      </button>
+      </div>
+
+
+
+      </div>
+
+
+
+
 
 
 

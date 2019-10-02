@@ -1,0 +1,134 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      
+
+            <a href="bspstart.html" class="govuk-back-link">Back</a>
+
+            <h1 class="govuk-heading-xl">Check claimant's State Pension age</h1>
+
+            <form class="casa-journey-form" action="#" method="post" novalidate="" autocomplete="off">
+
+                <input name="_csrf" type="hidden" value="BaiWK8Qo-hkic6leMSAxev8ENTSqTJEDAdBQ">
+              
+                  <div id="bspClaimantDateOfBirthGroup">
+              
+               
+              <div class="govuk-form-group">
+              
+              <fieldset class="govuk-fieldset" role="group" aria-describedby="f-bspClaimantDOB-hint">
+              
+               
+              
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+              
+               
+              
+                  Claimant’s date of birth
+              
+               
+              
+                </legend>
+              
+               
+              
+               
+              
+                <span class="govuk-hint" id="f-bspClaimantDOB-hint">
+              
+                  For example, 31 3 1980
+              
+                </span>
+              
+               
+              
+               
+              
+                <div class="govuk-date-input" id="f-bspClaimantDOB">
+              
+                 
+              
+                  <div class="govuk-date-input__item">
+              
+                    <div class="govuk-form-group">
+              
+                      <label class="govuk-label govuk-date-input__label" for="f-bspClaimantDOB[dd]">
+              
+                        Day
+              
+                      </label>
+              
+                   
+              
+                    
+              
+                      <input name="bspClaimantDOB[dd]" class="govuk-input govuk-date-input__input govuk-input--width-2 &#10;        &#10;      " id="f-bspClaimantDOB[dd]" type="number" pattern="[0-9]*">
+              
+                    </div>
+              
+                  </div>
+
+                  <div class="govuk-date-input__item">
+              
+                    <div class="govuk-form-group">
+              
+                      <label class="govuk-label govuk-date-input__label" for="f-bspClaimantDOB[mm]">
+              
+                        Month
+              
+                      </label>
+              
+                      <input name="bspClaimantDOB[mm]" class="govuk-input govuk-date-input__input govuk-input--width-2 &#10;        &#10;      " id="f-bspClaimantDOB[mm]" type="number" pattern="[0-9]*">
+              
+                    </div>
+              
+                  </div>
+              
+              
+                  <div class="govuk-date-input__item">
+              
+                    <div class="govuk-form-group">
+              
+                      <label class="govuk-label govuk-date-input__label" for="f-bspClaimantDOB[yyyy]">
+              
+                        Year
+              
+                      </label>
+              
+                      <input name="bspClaimantDOB[yyyy]" class="govuk-input govuk-date-input__input govuk-input--width-4 &#10;        &#10;      " id="f-bspClaimantDOB[yyyy]" type="number" pattern="[0-9]*">
+              
+                    </div>
+              
+                  </div>
+              
+               
+              
+                </div>
+              
+                </fieldset>
+              
+              </div>
+              
+               
+              <div class="govuk-form-group">
+                  <a href="#" role="button" draggable="false" class="govuk-button govuk-button">
+                      Continue
+                  </a>              
+             
+<div>
+            <a href="skipbsp.html" class="govuk-link"> Skip BSP - caller does not want to apply</a>
+              </div>          
+
+
+    </div>
+</div>
+
+{% endblock %}

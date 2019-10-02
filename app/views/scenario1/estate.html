@@ -1,0 +1,119 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      
+
+          
+            <a href="hospital.html" class="govuk-back-link">Back</a>
+        
+          <div class="govuk-form-group">
+          
+            <fieldset class="govuk-fieldset" aria-describedby="deceaseds-education-hint">
+            
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            
+              <h1 class="govuk-fieldset__heading">
+                Who is responsible for dealing with the property, belongings and money of the person who's died?
+              </h1>
+            
+            </legend>
+            
+          
+            <span id="deceaseds-education-hint" class="govuk-hint">
+              <p>We need to know in case we owe benefit money or some needs to be paid back.</p>
+            </span>
+          
+          
+            <div class="govuk-radios govuk-radios govuk-radios--conditional" data-module="radios">
+              
+              
+              
+              
+              
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="deceaseds-education-1" name="carer[who]" type="radio" value="caller">
+                <label class="govuk-label govuk-radios__label" for="deceaseds-education-1">
+                  You
+                </label>
+              </div>
+              
+              
+              
+              
+              
+              
+              
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="deceaseds-education-2" name="carer[who]" type="radio" value="somebody-else" aria-controls="conditional-deceaseds-education-2" aria-expanded="false">
+                <label class="govuk-label govuk-radios__label" for="deceaseds-education-2">
+                  Someone else
+                </label>
+              </div>
+              
+                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-deceaseds-education-2">
+                  
+                    
+          
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="carer-name">
+              Full name (optional)
+            </label>
+          
+          
+            <input class="govuk-input govuk-!-width-one-half" id="carer-name" name="carer[name]" type="text">
+          </div>
+          
+                  
+                </div>
+              
+              
+              
+              
+              
+              <div class="govuk-radios__divider">or</div>
+              
+              
+              
+              
+              
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="deceaseds-education-4" name="carer[who]" type="radio" value="I don't know">
+                <label class="govuk-label govuk-radios__label" for="deceaseds-education-4">
+                  I don't know
+                </label>
+              </div>
+              
+              
+              
+            </div>
+            </fieldset>
+          
+          
+          </div>
+          
+
+          <div class="govuk-form-group">
+              <a href="ciaadcya.html" role="button" draggable="false" class="govuk-button govuk-button">
+                  Continue
+              </a>
+          </button>
+          </div>
+          
+                </form>
+              </div>
+            </div>
+          
+          
+
+    </div>
+</div>
+
+{% endblock %}
