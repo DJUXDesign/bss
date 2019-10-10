@@ -1,0 +1,150 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    
+      <span style="float:right; margin-right: 5%" class="app-c-tag app-c-tag--dead">DEAD</span>
+      <div style="width:60%; float: left;">
+            <h1 class="govuk-heading-m">
+              Sam Smith
+              <span style="font-weight: 200; padding-left: 3%; font-size: 22px; color: grey">QQ 12 34 56 X</span>
+               <BR>     
+              <span style="font-weight: 200; padding-top: 2%; font-size: 19px; float: left; color: black">
+                  Date of death : 30 September 2019
+              </span>
+            </h1>
+          </div>
+          <div class="govuk-grid-row">
+              <div class="govuk-grid-column-full">
+                <p></p><hr class="govuk-section-break govuk-section-break--visible"><p></p>
+              </div>
+             </div>
+    
+    
+    <div class="govuk-grid-column-two-thirds">
+      
+
+          
+            <a href="callerdetails.html" class="govuk-back-link">Back</a>
+        
+
+
+            <form class="casa-journey-form" action="#" method="post" novalidate="" autocomplete="off">
+
+              <input name="_csrf" type="hidden" value="1elVbElM-9kOFKcx4vnJn0u7U_6Fk_LcwXMQ">
+            
+            
+            <div class="govuk-form-group">
+            
+             
+            
+              <fieldset class="govuk-fieldset heavy-hint" id="dapCallerHasAccountDetailsGroup" aria-describedby="f-dapCallerHasAccountDetails-hint">
+            
+             
+            
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            
+             
+            
+                <h1 class="govuk-fieldset__heading">
+            
+                  Do you have your bank details?
+            
+                </h1>
+            
+             
+            
+              </legend>
+            
+             
+            
+             
+            
+              <span class="govuk-hint" id="f-dapCallerHasAccountDetails-hint">
+            
+                If we owe any money, we can pay this into your bank account. If there is an overpayment, we will write to you and explain what to do next.
+            
+              </span>
+            
+             
+            
+             
+            
+              <div class="govuk-radios">
+            
+
+            
+                <div class="govuk-radios__item">
+            
+                  <input name="dapCallerHasAccountDetails" class="govuk-radios__input" id="f-dapCallerHasAccountDetails" type="radio" value="true">
+            
+                  <label class="govuk-label govuk-radios__label" for="f-dapCallerHasAccountDetails">
+            
+                    Yes
+            
+                  </label>
+            
+                </div>
+            
+
+            
+                <div class="govuk-radios__item">
+            
+                  <input name="dapCallerHasAccountDetails" class="govuk-radios__input" id="f-dapCallerHasAccountDetails-2" type="radio" value="false">
+            
+                  <label class="govuk-label govuk-radios__label" for="f-dapCallerHasAccountDetails-2">
+            
+                    No
+            
+                  </label>
+            
+                </div>
+            
+               
+            
+                
+            
+                
+            
+              </div>
+            
+              </fieldset>
+            
+             
+            
+             
+            
+            </div>
+            
+
+                <footer class="casa-form-control-block govuk-body">
+
+                </footer>
+            
+             
+            
+            </form>
+
+          <div class="govuk-form-group">
+              <a href="calleraccounttype.html" role="button" draggable="false" class="govuk-button govuk-button">
+                  Continue
+              </a>
+          </button>
+          </div>
+          
+                </form>
+              </div>
+            </div>
+          
+          
+
+    </div>
+</div>
+
+{% endblock %}

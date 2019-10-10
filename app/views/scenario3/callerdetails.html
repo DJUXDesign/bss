@@ -1,0 +1,603 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    
+      <span style="float:right; margin-right: 5%" class="app-c-tag app-c-tag--dead">DEAD</span>
+      <div style="width:60%; float: left;">
+            <h1 class="govuk-heading-m">
+              Sam Smith
+              <span style="font-weight: 200; padding-left: 3%; font-size: 22px; color: grey">QQ 12 34 56 X</span>
+               <BR>     
+              <span style="font-weight: 200; padding-top: 2%; font-size: 19px; float: left; color: black">
+                  Date of death : 30 September 2019
+              </span>
+            </h1>
+          </div>
+          <div class="govuk-grid-row">
+              <div class="govuk-grid-column-full">
+                <p></p><hr class="govuk-section-break govuk-section-break--visible"><p></p>
+              </div>
+             </div>
+    
+    
+    <div class="govuk-grid-column-two-thirds">
+      
+
+          
+            <a href="estate.html" class="govuk-back-link">Back</a>
+        
+         
+            <div class="govuk-form-group">
+          
+            <fieldset class="govuk-fieldset" aria-describedby="deceaseds-education-hint">
+            
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            
+              <h1 class="govuk-fieldset__heading">
+                About the responsible person
+              </h1>
+            
+            </legend>
+            
+            
+
+<h3 class="govuk-heading-s">Full name</h3>
+<p class="govuk-body">John Smith</p>
+
+
+<h3 class="govuk-heading-s">Phone number</h3>
+<p class="govuk-body">J0987654321
+
+</p>
+
+
+<div class="govuk-form-group">
+
+  <label class="govuk-label govuk-!-font-weight-bold" for="f-dapCompanyName">
+
+    Company name (optional)
+
+  </label>
+
+ 
+
+ 
+
+  <input name="dapCompanyName" class="govuk-input govuk-!-width-two-thirds" id="f-dapCompanyName" type="text">
+
+</div>
+
+           
+
+
+
+
+<div class="govuk-form-group">
+
+ 
+
+  <fieldset class="govuk-fieldset">
+
+ 
+
+  <legend class="govuk-fieldset__legend govuk-!-font-weight-bold">
+
+ 
+
+    Do you live at the same address as the person who died?
+
+ 
+
+  </legend>
+
+
+  <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+    <div class="govuk-radios__item">
+
+      <input name="dapSameAddressAsDeceased" class="govuk-radios__input" id="f-dapSameAddressAsDeceased" type="radio" value="true">
+
+      <label class="govuk-label govuk-radios__label" for="f-dapSameAddressAsDeceased">
+
+        Yes
+
+      </label>
+
+    </div>
+
+    <div class="govuk-radios__item">
+
+      <input name="dapSameAddressAsDeceased" class="govuk-radios__input" id="f-dapSameAddressAsDeceased-2" aria-expanded="false" aria-controls="conditional-f-dapSameAddressAsDeceased-2" type="radio" value="false">
+
+      <label class="govuk-label govuk-radios__label" for="f-dapSameAddressAsDeceased-2">
+
+        No
+
+      </label>
+
+    </div>
+
+   
+
+      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-f-dapSameAddressAsDeceased-2">
+
+       
+
+      
+
+  <fieldset class="govuk-fieldset" data-module="address-lookup">
+
+ 
+
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--s address-lookup__legend">
+
+ 
+
+    Address
+
+ 
+
+  </legend>
+
+ 
+
+ 
+
+    <div aria-live="assertive">
+
+     
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+<div class="govuk-form-group govuk-!-margin-bottom-2 address-lookup__postcode-container">
+
+  <label class="govuk-label" for="dapPostcodeLookup">
+
+    Postcode
+
+  </label>
+
+ 
+
+ 
+
+  <input class="govuk-input govuk-input--width-10 address-lookup__postcode" id="dapPostcodeLookup" type="text">
+
+</div>
+
+ 
+
+ 
+
+ 
+
+     
+
+  
+
+    
+
+  
+
+ 
+
+<button class="govuk-button govuk-button--secondary address-lookup__button govuk-!-margin-bottom-2" id="dapPostcodeLookupSubmit" type="button">
+
+  Find address
+
+</button>
+
+ 
+
+    </div>
+
+ 
+
+    <div class="address-lookup__results-container">
+
+      <p class="address-lookup__results-count govuk-visually-hidden" aria-live="assertive"></p>
+
+    </div>
+
+ 
+
+   
+
+ 
+
+    <details class="govuk-details address-lookup__details" role="group">
+
+  <summary tabindex="0" class="govuk-details__summary" role="button" aria-expanded="false" aria-controls="details-content-8e87cff6-ec03-43a0-a7c7-066bba9ad06e">
+
+    <span class="govuk-details__summary-text">
+
+      Enter address manually
+
+    </span>
+
+  </summary>
+
+  <div class="govuk-details__text" id="details-content-8e87cff6-ec03-43a0-a7c7-066bba9ad06e" aria-hidden="true" style="display: none;">
+
+   
+
+      
+
+  <fieldset class="govuk-fieldset">
+
+ 
+
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+
+ 
+
+    Address
+
+ 
+
+  </legend>
+
+ 
+
+ 
+
+ 
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+<div class="govuk-form-group">
+
+  <label class="govuk-label" for="f-dapAddressLineOne">
+
+    Building and street <span class="govuk-visually-hidden">line 1 of 2</span>
+
+  </label>
+
+ 
+
+ 
+
+  <input name="dapAddressLineOne" class="govuk-input govuk-!-width-two-thirds address-line-one" id="f-dapAddressLineOne" type="text">
+
+</div>
+
+ 
+
+ 
+
+ 
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+<div class="govuk-form-group">
+
+  <label class="govuk-label" for="f-dapAddressLineTwo">
+
+    <span class="govuk-visually-hidden">Building and street line 2 of 2 (optional)</span>
+
+  </label>
+
+ 
+
+ 
+
+  <input name="dapAddressLineTwo" class="govuk-input govuk-!-width-two-thirds address-line-two" id="f-dapAddressLineTwo" type="text">
+
+</div>
+
+ 
+
+ 
+
+ 
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+<div class="govuk-form-group">
+
+  <label class="govuk-label" for="f-dapAddressCity">
+
+    Town or city
+
+  </label>
+
+ 
+
+ 
+
+  <input name="dapAddressCity" class="govuk-input govuk-!-width-two-thirds address-town" id="f-dapAddressCity" type="text">
+
+</div>
+
+ 
+
+ 
+
+ 
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+<div class="govuk-form-group">
+
+  <label class="govuk-label" for="f-dapAddressCounty">
+
+    County (optional)
+
+  </label>
+
+ 
+
+ 
+
+  <input name="dapAddressCounty" class="govuk-input govuk-!-width-two-thirds address-county" id="f-dapAddressCounty" type="text">
+
+</div>
+
+ 
+
+ 
+
+ 
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+<div class="govuk-form-group">
+
+  <label class="govuk-label" for="f-dapAddressCountry">
+
+    Country
+
+  </label>
+
+ 
+
+ 
+
+  <input name="dapAddressCountry" class="govuk-input govuk-!-width-two-thirds address-country" id="f-dapAddressCountry" type="text">
+
+</div>
+
+ 
+
+ 
+
+ 
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+<div class="govuk-form-group govuk-!-margin-bottom-2">
+
+  <label class="govuk-label" for="f-dapAddressPostcode">
+
+    Postcode
+
+  </label>
+
+ 
+
+ 
+
+  <input name="dapAddressPostcode" class="govuk-input govuk-input--width-10 address-postcode" id="f-dapAddressPostcode" type="text">
+
+</div>
+
+ 
+
+ 
+
+  </fieldset>
+
+ 
+
+ 
+
+   
+
+  </div>
+
+</details>
+
+ 
+
+ 
+
+   
+
+  </fieldset>
+
+ 
+
+ 
+
+   
+
+      </div>
+
+        
+              
+              
+              
+
+            </div>
+            </fieldset>
+          
+          
+          </div>
+          
+
+          <div class="govuk-form-group">
+              <a href="calleraccount.html" role="button" draggable="false" class="govuk-button govuk-button">
+                  Continue
+              </a>
+          </button>
+          </div>
+          
+                </form>
+              </div>
+            </div>
+          
+          
+
+    </div>
+</div>
+
+{% endblock %}
