@@ -1,0 +1,556 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    
+     
+        <h1 class="govuk-heading-l">
+            Sam Smith
+            <span style="font-weight: 200; padding-left: 3%; font-size: 22px; color: grey">QQ 12 34 56 X</span>
+           
+            </span>
+          </h1>
+          <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+          <div class="govuk-grid-column-two-thirds">
+        <a href="aboutcaller.html" class="govuk-back-link">Back</a>
+
+     
+      <h1 class="govuk-heading-xl">
+        About the person who died
+      </h1>
+
+
+
+      <fieldset class="govuk-fieldset" data-module="address-lookup">
+
+ 
+
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--s address-lookup__legend">
+            Address
+          </legend>
+        
+         
+        
+         
+        
+            <div aria-live="assertive">
+        
+        <div class="govuk-form-group govuk-!-margin-bottom-2 address-lookup__postcode-container">
+          <label class="govuk-label" for="deceasedPostcodeLookup">
+            Postcode
+          </label>
+          <input class="govuk-input govuk-input--width-10 address-lookup__postcode" id="deceasedPostcodeLookup" type="text">
+        </div>
+        
+        
+        <button class="govuk-button govuk-button--secondary address-lookup__button govuk-!-margin-bottom-2" id="deceasedPostcodeLookupSubmit" type="button">
+
+          Find address
+        
+        </button>
+        
+            </div>
+        
+         
+        
+        
+        <details class="govuk-details address-lookup__details" role="group">
+        
+          <summary tabindex="0" class="govuk-details__summary" role="button" aria-expanded="false" aria-controls="details-content-c090fa88-a9bf-4545-89b1-9b30bbb29b6f">
+        
+            <span class="govuk-details__summary-text">
+        
+              Enter address manually
+        
+            </span>
+        
+          </summary>
+        
+         
+          <div class="govuk-details__text">
+        
+          <fieldset class="govuk-fieldset">
+        
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+        
+            Address
+          </legend>
+        
+         
+        
+        <div class="govuk-form-group">
+        
+          <label class="govuk-label" for="f-deceasedAddressLineOne">
+        
+            Building and street <span class="govuk-visually-hidden">line 1 of 2</span>
+        
+          </label>
+        
+          <input name="deceasedAddressLineOne" class="govuk-input govuk-!-width-two-thirds address-line-one" id="f-deceasedAddressLineOne" type="text">
+        
+        </div>
+        
+       
+        <div class="govuk-form-group">
+        
+          <label class="govuk-label" for="f-deceasedAddressLineTwo">
+        
+            <span class="govuk-visually-hidden">Building and street line 2 of 2 (optional)</span>
+        
+          </label>
+          <input name="deceasedAddressLineTwo" class="govuk-input govuk-!-width-two-thirds address-line-two" id="f-deceasedAddressLineTwo" type="text">
+        
+        </div>
+        
+       
+        <div class="govuk-form-group">
+        
+          <label class="govuk-label" for="f-deceasedAddressCity">
+        
+            Town or city
+        
+          </label>
+        
+          <input name="deceasedAddressCity" class="govuk-input govuk-!-width-two-thirds address-town" id="f-deceasedAddressCity" type="text">
+        
+        </div>
+       
+        <div class="govuk-form-group">
+        
+          <label class="govuk-label" for="f-deceasedAddressCounty">
+        
+            County (optional)
+        
+          </label>
+        
+          <input name="deceasedAddressCounty" class="govuk-input govuk-!-width-two-thirds address-county" id="f-deceasedAddressCounty" type="text">
+        
+        </div>
+      
+        <div class="govuk-form-group">
+        
+          <label class="govuk-label" for="f-deceasedAddressCountry">
+        
+            Country
+        
+          </label>
+        
+          <input name="deceasedAddressCountry" class="govuk-input govuk-!-width-two-thirds address-country" id="f-deceasedAddressCountry" type="text">
+        
+        </div>
+       
+        <div class="govuk-form-group govuk-!-margin-bottom-2">
+        
+          <label class="govuk-label" for="f-deceasedAddressPostcode">
+        
+            Postcode
+        
+          </label>
+        
+          <input name="deceasedAddressPostcode" class="govuk-input govuk-input--width-10 address-postcode" id="f-deceasedAddressPostcode" type="text">
+        
+        </div>
+        
+          </fieldset>
+        
+          </div>
+        
+        </details>
+      
+          </fieldset>
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="deceased-dod-hint" role="group">
+          
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+          
+            <h1 class="govuk-fieldset__heading">
+              Date of death
+            </h1>
+          
+          </legend>
+          
+        
+          <span id="deceased-dod-hint" class="govuk-hint">
+            For example, 31 3 2018
+          </span>
+        
+        
+          <div class="govuk-date-input" id="deceased-dod">
+            
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="deceased-dod-deceased[dod][day]">
+                  Day
+                </label>
+              
+              
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="deceased-dod-deceased[dod][day]" name="deceased[dod][day]" type="number" pattern="[0-9]*">
+              </div>
+            </div>
+          
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="deceased-dod-deceased[dod][month]">
+                  Month
+                </label>
+              
+              
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="deceased-dod-deceased[dod][month]" name="deceased[dod][month]" type="number" pattern="[0-9]*">
+              </div>
+            </div>
+          
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="deceased-dod-deceased[dod][year]">
+                  year
+                </label>
+              
+              
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="deceased-dod-deceased[dod][year]" name="deceased[dod][year]" type="number" pattern="[0-9]*">
+              </div>
+            </div>
+          
+          </div>
+          </fieldset>
+        
+        
+        </div>
+
+
+
+        <div class="govuk-form-group">
+
+ 
+
+            <div class="govuk-checkboxes govuk-checkboxes--small" id="f-estimatedDateOfDeath-wrapper">
+          
+             
+              <div class="govuk-checkboxes__item">
+          
+                <input name="estimatedDateOfDeath[]" class="govuk-checkboxes__input" id="f-estimatedDateOfDeath" type="checkbox" value="true">
+          
+                <label class="govuk-label govuk-checkboxes__label" for="f-estimatedDateOfDeath">
+          
+                  This is an estimated date of death (non-verified)
+          
+                </label>
+          
+              </div>
+          
+            </div>
+          
+          </div>
+
+
+
+          <div id="f-deceasedQualifyingBenefits">
+
+
+              <div class="govuk-form-group">
+              
+                <fieldset class="govuk-fieldset">
+                        
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                                           
+                  Benefits they were getting or waiting to hear about                                           
+                </legend>              
+                <div class="govuk-checkboxes" id="f-deceasedQualifyingBenefits[]-wrapper">
+
+
+                    <div class="govuk-checkboxes__item">
+              
+                        <input name="deceasedQualifyingBenefits[]" class="govuk-checkboxes__input" id="f-deceasedQualifyingBenefits[]" type="checkbox" value="bereavement_benefits">
+                  
+                        <label class="govuk-label govuk-checkboxes__label" for="f-deceasedQualifyingBenefits[]">
+                  
+                            Attendance Allowance
+                  
+                        </label>
+                  
+                      </div>
+
+
+
+
+                  <div class="govuk-checkboxes__item">
+              
+                    <input name="deceasedQualifyingBenefits[]" class="govuk-checkboxes__input" id="f-deceasedQualifyingBenefits[]" type="checkbox" value="bereavement_benefits">
+              
+                    <label class="govuk-label govuk-checkboxes__label" for="f-deceasedQualifyingBenefits[]">
+              
+                      Bereavement Benefits
+              
+                    </label>
+              
+                  </div>
+              
+
+                  <div class="govuk-checkboxes__item">
+              
+                    <input name="deceasedQualifyingBenefits[]" class="govuk-checkboxes__input" id="qualifying-benefits-2" type="checkbox" value="bereavement_support_payment">
+              
+                    <label class="govuk-label govuk-checkboxes__label" for="qualifying-benefits-2">
+              
+                      Bereavement Support Payment
+              
+                    </label>
+              
+                  </div>
+
+              
+                  <div class="govuk-checkboxes__item">
+              
+                    <input name="deceasedQualifyingBenefits[]" class="govuk-checkboxes__input" id="qualifying-benefits-3" type="checkbox" value="carers_allowance">
+              
+                    <label class="govuk-label govuk-checkboxes__label" for="qualifying-benefits-3">
+              
+                      Carer's Allowance
+              
+                    </label>
+              
+                  </div>
+              
+                  <div class="govuk-checkboxes__item">
+              
+                    <input name="deceasedQualifyingBenefits[]" class="govuk-checkboxes__input" id="qualifying-benefits-4" type="checkbox" value="disability_living_allowance_working_age">
+              
+                    <label class="govuk-label govuk-checkboxes__label" for="qualifying-benefits-4">
+              
+                      Disability Living Allowance
+              
+                    </label>
+              
+                  </div>
+              
+
+                  <div class="govuk-checkboxes__item">
+              
+                    <input name="deceasedQualifyingBenefits[]" class="govuk-checkboxes__input" id="qualifying-benefits-5" type="checkbox" value="employment_support_allowance">
+              
+                    <label class="govuk-label govuk-checkboxes__label" for="qualifying-benefits-5">
+              
+                      Employment and Support Allowance
+              
+                    </label>
+              
+                  </div>
+              
+
+              
+                  <div class="govuk-checkboxes__item">
+              
+                    <input name="deceasedQualifyingBenefits[]" class="govuk-checkboxes__input" id="qualifying-benefits-6" type="checkbox" value="incapacity_benefit">
+              
+                    <label class="govuk-label govuk-checkboxes__label" for="qualifying-benefits-6">
+              
+                      Incapacity Benefit
+              
+                    </label>
+              
+                  </div>
+              
+              
+                  <div class="govuk-checkboxes__item">
+              
+                    <input name="deceasedQualifyingBenefits[]" class="govuk-checkboxes__input" id="qualifying-benefits-7" type="checkbox" value="income_support">
+              
+                    <label class="govuk-label govuk-checkboxes__label" for="qualifying-benefits-7">
+              
+                      Income Support
+              
+                    </label>
+              
+                  </div>
+              
+
+                  <div class="govuk-checkboxes__item">
+              
+                    <input name="deceasedQualifyingBenefits[]" class="govuk-checkboxes__input" id="qualifying-benefits-8" type="checkbox" value="industrial_injuries_disablement_benefit">
+              
+                    <label class="govuk-label govuk-checkboxes__label" for="qualifying-benefits-8">
+              
+                      Industrial Injuries Disablement Benefit
+              
+                    </label>
+              
+                  </div>
+              
+ 
+                  <div class="govuk-checkboxes__item">
+              
+                    <input name="deceasedQualifyingBenefits[]" class="govuk-checkboxes__input" id="qualifying-benefits-9" type="checkbox" value="jobseekers_allowance">
+              
+                    <label class="govuk-label govuk-checkboxes__label" for="qualifying-benefits-9">
+              
+                      Jobseeker's Allowance
+              
+                    </label>
+              
+                  </div>
+
+                  <div class="govuk-checkboxes__item">
+              
+                    <input name="deceasedQualifyingBenefits[]" class="govuk-checkboxes__input" id="qualifying-benefits-10" type="checkbox" value="maternity_allowance">
+              
+                    <label class="govuk-label govuk-checkboxes__label" for="qualifying-benefits-10">
+              
+                      Maternity Allowance
+              
+                    </label>
+              
+                  </div>
+
+                  <div class="govuk-checkboxes__item">
+              
+                      <input name="deceasedQualifyingBenefits[]" class="govuk-checkboxes__input" id="qualifying-benefits-11" type="checkbox" value="personal_independence_payment">
+                
+                      <label class="govuk-label govuk-checkboxes__label" for="qualifying-benefits-11">
+                          Pension Credit
+                
+                      </label>
+                
+                    </div>
+
+                  <div class="govuk-checkboxes__item">
+              
+                    <input name="deceasedQualifyingBenefits[]" class="govuk-checkboxes__input" id="qualifying-benefits-11" type="checkbox" value="personal_independence_payment">
+              
+                    <label class="govuk-label govuk-checkboxes__label" for="qualifying-benefits-11">
+              
+                      Personal Independence Payment
+              
+                    </label>
+              
+                  </div>
+              
+
+                  <div class="govuk-checkboxes__item">
+              
+                    <input name="deceasedQualifyingBenefits[]" class="govuk-checkboxes__input" id="qualifying-benefits-12" type="checkbox" value="severe_disablement_allowance">
+              
+                    <label class="govuk-label govuk-checkboxes__label" for="qualifying-benefits-12">
+              
+                      Severe Disablement Allowance
+              
+                    </label>
+              
+                  </div>
+
+
+                  <div class="govuk-checkboxes__item">
+              
+                      <input name="deceasedQualifyingBenefits[]" class="govuk-checkboxes__input" id="qualifying-benefits-12" type="checkbox" value="severe_disablement_allowance">
+                
+                      <label class="govuk-label govuk-checkboxes__label" for="qualifying-benefits-12">
+                
+                        State Pension
+                
+                      </label>
+                
+                    </div>
+
+
+
+
+
+                  <div class="govuk-checkboxes__item">
+              
+                    <input name="deceasedQualifyingBenefits[]" class="govuk-checkboxes__input" id="qualifying-benefits-13" type="checkbox" value="universal_credit">
+              
+                    <label class="govuk-label govuk-checkboxes__label" for="qualifying-benefits-13">
+              
+                      Universal Credit
+              
+                    </label>
+              
+                  </div>
+
+                  <div class="govuk-checkboxes__item">
+              
+                    <input name="deceasedQualifyingBenefits[]" class="govuk-checkboxes__input" id="qualifying-benefits-14" type="checkbox" value="widowed_parent_allowance">
+              
+                    <label class="govuk-label govuk-checkboxes__label" for="qualifying-benefits-14">
+              
+                      Widowed Parent's Allowance
+              
+                    </label>
+              
+                  </div>
+              
+
+                  <div class="govuk-checkboxes__item">
+              
+                    <input name="deceasedQualifyingBenefits[]" class="govuk-checkboxes__input" id="qualifying-benefits-15" type="checkbox" value="none">
+              
+                    <label class="govuk-label govuk-checkboxes__label" for="qualifying-benefits-15">
+              
+                      None
+              
+                    </label>
+              
+                  </div>
+  
+              
+                </div>
+              
+                </fieldset>
+              
+
+              
+              </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      
+      
+      
+
+            
+          
+          
+      
+
+    
+        </fieldset>
+        
+        <div class="govuk-form-group">
+          <a href="hospital.html" role="button" draggable="false" class="govuk-button govuk-button">
+              Continue
+          </a>
+      </button>
+      </div>
+
+
+
+      </div>
+
+
+
+
+
+
+
+    </div>
+</div>
+
+{% endblock %}
